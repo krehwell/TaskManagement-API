@@ -13,21 +13,26 @@
 ### NestJS
 - Installation
     ```bash
-    $ npm i -g @nestjs/cli
+    npm i -g @nestjs/cli
     ```
 - Create New Entities
     ```bash
     # --no-spec = don't generate testfile
-    $ nest g module <entity name>
-    $ nest g service <entity name> --no-spec  
-    $ nest g controller <entity name> --no-spec 
+    # create module 
+    nest g module <noun>
+
+    # create service | business logic
+    nest g service <noun> --no-spec  
+
+    # create controller | routes
+    nest g controller <noun> --no-spec 
     ```
 
 ### Database
 - PostgreSQL (TypeOrm)
     - Create PostgreSQL using Docker
     ```bash
-    $ docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+    docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
     ```
 
     - **[Linux]** 
@@ -35,14 +40,16 @@
 
     - Run Docker
     ```bash
-    $ docker container start postgres-nest
+    docker container start postgres-nest
     ```
 
     - Useful Command
-    ```
-    $ docker container ls  # list of containers run
-    $ docker stop rm <container name>  # stop container
-    $ docker container rm <container name>  # delete container
+    ```bash
+    docker container ls  # list of containers run
+
+    docker stop rm <container name>  # stop container
+
+    docker container rm <container name>  # delete container
     ```
 
 
@@ -50,13 +57,13 @@
 
 ```bash
 # development
-$ npm run start
+npm run start
 
 # watch mode
-$ npm run start:dev
+npm run start:dev
 
 # production mode
-$ npm run start:prod
+npm run start:prod
 ```
 
 ## License
