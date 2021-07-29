@@ -7,7 +7,7 @@ import { Task } from './task.entity';
 
 @Controller('tasks')
 export class TasksController {
-    constructor(private taskService: TasksService) {}
+    constructor(private taskService: TasksService) { }
 
     @Get()
     getAllTasks(@Query() filters: FilterDto): Promise<Task[]> {
