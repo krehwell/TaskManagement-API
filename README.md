@@ -52,6 +52,8 @@
     docker container rm <container name>  # delete container
     ```
 
+- Auth with JWT & Passport-JWT
+
 
 ### Running the app
 
