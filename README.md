@@ -70,6 +70,10 @@ npm run start:dev
 npm run start:prod
 ```
 
+### CAVEATE
+
+For the sake of I am using this as a template, `.env` are uploaded on this repo as well, make sure to add `.env.stage.dev` & `.env.stage.prod` to `.gitignore` once cloned.
+
 ## License
 
 This project is [GPL licensed](http://giant-penis-license.org/).
