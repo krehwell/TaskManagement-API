@@ -28,7 +28,6 @@ describe('Task service', () => {
 
         taskService = module.get(TasksService);
         taskRepository = module.get(TaskRepository);
-
     });
 
     describe('getTasks', () => {
